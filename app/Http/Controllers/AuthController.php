@@ -20,7 +20,7 @@ class AuthController extends Controller
             'password' => 'required'
         ]);
 
-        // credensial
+        // credentials
         $credentials = $request->only('email', 'password');
 
         // cek apakah ada user yang data terdaftar di database
@@ -38,7 +38,6 @@ class AuthController extends Controller
     // logout
     public function logout() {
         Auth::logout();
-
         return redirect('/login');
     }
 }

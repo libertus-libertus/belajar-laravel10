@@ -33,9 +33,15 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
           data-accordion="false">
           <li class="nav-item">
-            <a href="pages/layout/top-nav.html" class="nav-link">
+            <a href="{{ url('dashboard') }}" class="nav-link">
               <i class="fa fa-cubes"></i>
               <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ url('users') }}" class="nav-link">
+              <i class="fa fa-users"></i>
+              <p>Users</p>
             </a>
           </li>
           <li class="nav-item">
